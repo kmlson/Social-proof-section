@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+/* 
+     font-family: 'League Spartan', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+*/
+
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --MobileWidth: 375px;
+    --DesktopWidth:1440px
+    --Mobile-section-width:326px;
+    --Desktop-testymonial-height:232px;
+    --Desktop-testymonial-width:350px;
+    --Fontsize: 15px;
+    --family1:'League Spartan', sans-serif;
+    --family2:'Lexend Deca', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-size: var(--Fontsize);
+    font-family: var(--family1);
+    background-image: url("images/bg-pattern-top-mobile.svg"),url("images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left,bottom left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+main {
+    width:var(--MobileWidth);
+    padding: 0 2.2rem;
+
+}
+
+
+
+header h1 {
+    text-align: center;
+    font-family: var(--family2);
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+    padding: 4rem 4.6rem;
+   
+    
+    
+}
+
+header p {
+    font-family: var(--family2);
+    font-weight: 500;
+    color: var(--DarkGrayishMagenta);
+    text-align: center;
+   
+}
+
+.review-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7.7rem;
+    border-radius: .5rem;
+    background-color:var(--LightGrayishMagenta) ;
+    margin: 1.4rem 0;
+}
+
+.review-component  div {
+    margin: 0.5rem 0;
+   
+}
+
+.rating {
+    margin: 4rem 0rem;
+}
+
+
+.rating .stars {
+    background-image: url( 'images/icon-star.svg' );
+    background-size: 1.7rem 1.6rem;
+    height: 1.6rem;
+    width: 10rem;
+    background-repeat:space ;
+   
+  
+}
+
+.rating .review {
+    color: var(--VeryDarkMagenta);
+    font-family: var(--family1);
+    font-weight: 700;
+}
+
+.card {
+   background-color: var(--VeryDarkMagenta); 
+   padding: 3rem;
+   color: var(--White);
+   margin-bottom: 2rem;
+   border-radius: 0.9rem;
+   
+
+}
+
+
+
+.card img {
+    border-radius: 50%;
+    width:4rem;
+    height: 4rem;
+    float: left;
+    margin-right: 2rem;
+   
+   
+}
+
+.name {
+    font-family: var(--family2);
+}
+
+.customer-desc {
+    color: var(--SoftPink);
+}
+
+
+.card p {
+    margin-top: 3rem;
+    font-family: var(--family2);
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1100px)  {
+
+
+body {
+    background-image: url("images/bg-pattern-top-desktop.svg"),url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: top center,bottom center;
+}
+
+main {
+    width: var(--DesktopWidth);
+    padding: 0;
+   
+}
+
+ header {
+    display: flex;
+ 
+
+ }
+
+ header h1 {
+   text-align: unset;
+    font-size: 4.2rem;
+    padding: 0;
+    padding-top: 2rem;
+    padding-right: 4.6rem;
+   
+    
+
+ }
+
+ header p { 
+    text-align: unset;
+    padding: 0;
+    padding-top: 3rem;
+ }
+
+ .header {
+    width: 45rem;
+    margin-right:17rem;
+ }
+ .rating {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ .review-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40rem;
+    height: 5rem;
+ }
+.review-component:nth-child(1) {
+    align-self: start;
+    
+}
+
+.review-component:nth-child(2) {
+    align-self: center;
+   
+}
+
+.review-component:nth-child(3) {
+    align-self: flex-end;
+    
+}
+
+
+
+ .testimonial {
+  
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    
+   
+ }
+ .card {
+   margin-right: 1rem;
+    width: 35rem;
+    height: 23.2rem;
+ }
+
+ .card:nth-child(1)
+ {
+    align-self: start;
+ }
+ .card:nth-child(2)
+ {
+    align-self: center;
+ }
+ .card:nth-child(3) {
+    align-self: end;
+   
+ }
+
+
+ 
+
+}
